@@ -35,10 +35,13 @@ long __stdcall hkEndScene(LPDIRECT3DDEVICE9 pDevice)
 	ImGui_ImplWin32_NewFrame();
 	ImGui::NewFrame();
 
-	ImGui::Begin("4"); //название окна
-	ImGui::Checkbox("name", &cb); //кнопка
-	ImGui::SliderFloat("name1", &sl, 0.f, 1.f); //ползунок плавуюших чисел
-	ImGui::SliderInt("name2", &si, 0, 100); // ползунок целых чисел
+	ImGui::Begin("4"); 
+	
+	ImGui::Checkbox("name", &cb); 
+	
+	ImGui::SliderFloat("name1", &sl, 0.f, 1.f); 
+	
+	ImGui::SliderInt("name2", &si, 0, 100); 
 
 	ImGui::End();
 
